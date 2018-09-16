@@ -1,0 +1,15 @@
+Cấu trúc component
+
+App 1
+    Header 2
+    Products 3
+        Product 4
+        Product
+        Product
+    Message 5
+    Cart 6 
+        CartItem 7
+        CartItem
+        CartItem
+        CartResult 8
+    Footer 9
