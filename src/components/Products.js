@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 class Products extends Component {
 
     render() {
-        var {products} = this.props;
         return (
             <section className="section">
                 <h1 className="section-heading">Danh Sách Truyện Của Mặc Hương Đồng Xú</h1>
