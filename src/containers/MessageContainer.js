@@ -6,20 +6,20 @@ import Message from './../components/Message';
 class MessageContainer extends Component {
 
     render() {
-        var {message} = this.props;
+        var { message } = this.props;
         return (
-            <Message message={message}/>
+            <Message message={message} />
         );
     }
 }
 
 MessageContainer.propTypes = {
-    message : PropTypes.string.isRequired
+    message: PropTypes.string.isRequired
 }
 
 const mapStateToProps = state => {
     return {
-        message : state.message
+        message: state.message
     }
 }
 
