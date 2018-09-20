@@ -8,10 +8,14 @@ class App extends Component {
             result.push(<i key={i} className="fa fa-star"></i>);
         }
         for (var j = 1; j <= 5 - rating; j++) {
-            result.push(<i key={i+j} className="fa fa-star-o"></i>);
+            result.push(<i key={i + j} className="fa fa-star-o"></i>);
         }
         return result;
- 
+
+    }
+
+    onAddToCart = (product) => {
+        this.props.onAddToCart(product);
     }
 
     render() {
@@ -43,7 +47,12 @@ class App extends Component {
                         <div className="card-footer">
                             <span className="left">{product.price} VNĐ</span>
                             <span className="right">
-                                <a className="btn-floating blue-gradient" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Cart">
+                                <a
+                                    className="btn-floating blue-gradient"
+                                    data-toggle="tooltip" data-placement="top"
+                                    title="" data-original-title="Add to Cart"
+                                    onClick={() => this.onAddToCart(product)}
+                                >
                                     <i className="fa fa-shopping-cart"></i>
                                 </a>
                             </span>
